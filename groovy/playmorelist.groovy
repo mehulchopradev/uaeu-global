@@ -16,7 +16,7 @@ println oddMoreThan5
 
 
 // get a new list which is squares of elements from nos
-// mapping
+// mapping operation
 
 def squares = nos.collect {
   it ** 2
