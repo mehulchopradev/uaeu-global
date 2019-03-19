@@ -1,9 +1,15 @@
+import xyz.supercoders.college.domain.Student
+import xyz.supercoders.college.domain.CollegeUser
 
 println Student.getCount()
 
-def s1 = new Student('mehul', 'm' as Character, 10, 90)
+// a super class reference variable type can store address of its subclass object
+CollegeUser s1 = new Student('mehul', 'm' as Character, 10, 90)
 println s1.name // -> s1.getName() (internally done by groovy)
 println s1.gender
+println s1.roll
+
+println s1.giveAttendance() // contrary to java, this works in groovy
 
 s1.name = 'Mehul' // s1.setName('Mehul') (internally done by groovy)
 // println s1.getDetails()

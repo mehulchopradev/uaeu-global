@@ -1,5 +1,23 @@
 def nos = [4, 5, 2, 3, 1, 10, 7, 9, 2]
 
+def hasEvens = nos.any {
+  !(it % 2)
+}
+
+println hasEvens
+
+def hasAllOdds = nos.every {
+  it % 2
+}
+
+println hasAllOdds
+
+def hasLessThanEqual10 = nos.every {
+  it <= 10
+}
+
+println hasLessThanEqual10
+
 // get a new list from nos, which has only even elements
 // filtering
 
